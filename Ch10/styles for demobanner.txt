@@ -1,0 +1,8 @@
+/***** DEMO BANNER *****/
+#demobanner {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+}

@@ -1,0 +1,15 @@
+  const data = useStaticQuery(graphql`
+    query NavQuery {    
+      datoCmsNavigation {
+        homeText
+        homeLink
+        aboutText
+        aboutLink
+        blogText
+        blogLink
+        galleryText
+        galleryLink
+        helpText
+        helpLink
+      }
+    }

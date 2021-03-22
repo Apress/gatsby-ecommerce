@@ -1,0 +1,10 @@
+CODE FRAGMENTS:
+
+import React from "react"
+import { graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
+
+const disqusConfig = {
+  shortname: process.env.GATSBY_DISQUS_NAME,
+  config: { identifier: post.id },
+}

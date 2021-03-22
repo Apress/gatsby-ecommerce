@@ -1,0 +1,84 @@
+i18n COMPONENT:
+
+import i18n from "i18next"
+import Backend from "i18next-xhr-backend"
+import LanguageDetector from "i18next-browser-languagedetector"
+import { reactI18nextModule } from "react-i18next"
+
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(reactI18nextModule)
+  .init({
+    fallbackLng: "en",
+    ns: ["translations"],
+    defaultNS: "translations",
+    debug: true,
+    interpolation: {
+      escapeValue: false,
+    },
+    react: {
+      wait: true,
+    },
+  })
+  
+export default i18n
+
+
+
+
+EXPORTS ONPOSTBUILD EVENT:
+
+exports.onPostBuild = () => {
+  console.log("Copying locales")
+  fs.copySync(
+    path.join(__dirname, "/src/locales"),
+    path.join(__dirname, "/public/locales")
+  )
+}
+
+
+
+
+
+SWITCHER COMPONENT, FOR REFERENCE:
+
+import React, { Component } from "react"
+import classNames from "classnames"
+import { translate } from "react-i18next"
+class LanguageSwitcher extends Component {
+  constructor(props) {
+    super(props)
+    this.handleChangeLanguage = this.handleChangeLanguage.bind(this)
+  }
+  handleChangeLanguage(lng) {
+    const { i18n } = this.props
+    i18n.changeLanguage(lng)
+  }
+  renderLanguageChoice({ code, label }) {
+    const buttonClass = classNames("LanguageSwitcher__button", {
+      "LanguageSwitcher__button--selected": this.props.i18n.language === code,
+    })
+    return (
+      <button
+        key={code}
+        className={buttonClass}
+        onClick={() => this.handleChangeLanguage(code)}
+      >
+        {label}
+      </button>
+    )
+  }
+  render() {
+    const languages = [
+      { code: "en", label: "English" },
+      { code: "cy", label: "Cymraeg" },
+    ]
+    return (
+      <div className="LanguageSwitcher">
+        {languages.map(language => this.renderLanguageChoice(language))}
+      </div>
+    )
+  }
+}
+export default translate("LanguageSwitcher")(LanguageSwitcher)

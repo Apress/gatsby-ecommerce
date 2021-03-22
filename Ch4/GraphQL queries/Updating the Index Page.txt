@@ -1,0 +1,22 @@
+export const NewArrivals = graphql`
+  query NewArrival  {    
+    allDatoCmsCupcake(filter: {newarrival: { eq: true }}, sort: { fields: [stockId], order: ASC }) {
+      edges {
+        node {
+          id
+          stockId
+          name
+          newarrival
+          slug
+          productImage {
+            width
+            height
+            fluid(imgixParams: { fm: "jpg", auto: "compress"}) {
+              ...GatsbyDatoCmsFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

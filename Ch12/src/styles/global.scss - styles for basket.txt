@@ -1,0 +1,18 @@
+/**** RESPONSIVE BASKET ****/
+  #cartpage div.taxes {
+    flex-direction: column;
+  }
+
+  #cartpage button.checkout {
+    width: 100%;
+  }
+
+  #cartpage > div > ul > li:nth-child(3) > span:nth-child(2) {
+    width: 40%;
+  }
+
+  #cartpage div ul {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 80px 345px 90px 100px;
+  }

@@ -1,0 +1,15 @@
+query WorkQuery {
+  cupcake {
+    stockId
+    name
+    price
+    productImage {
+      responsiveImage {
+        alt
+        base64
+        bgColor
+        title
+      }
+    }
+  }
+}

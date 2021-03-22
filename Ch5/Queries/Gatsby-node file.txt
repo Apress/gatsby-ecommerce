@@ -1,0 +1,12 @@
+const { createPage } = actions
+  return graphql(`
+    {
+      allShopifyProduct {
+        edges {
+          node {
+            handle
+          }
+        }
+      }
+    }
+  `)

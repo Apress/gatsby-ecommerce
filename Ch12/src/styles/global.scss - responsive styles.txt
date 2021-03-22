@@ -1,0 +1,117 @@
+/****** MEDIA QUERIES ******/ 
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header > div:nth-child(2) > p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  header > div:nth-child(3) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  header > div:nth-child(3) > a > span {
+    font-size: 0.8rem;
+  }
+
+  header > div:nth-child(3) > a > img {
+    margin-bottom: -10px !important;
+  }
+
+  header > div:nth-child(3) > a > span {
+    float: unset;
+    display: inline-flex;
+  }
+
+  #gatsby-focus-wrapper > div.css-1ar37a1 {
+    margin-top: 20px;
+  }
+
+  #gatsby-focus-wrapper div ul li, #gatsby-focus-wrapper ul li{
+    width: 100%;
+    height: auto;
+  }
+
+  #gatsby-focus-wrapper footer {
+    flex-direction: column;
+  }
+
+  footer > div > p:nth-child(1) {
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(0,0,0,0.8);
+  }
+
+  // Subscribe section
+  #gatsby-focus-wrapper > footer > div:nth-child(2) > form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #gatsby-focus-wrapper > footer > div:nth-child(2) > p:nth-child(2) {
+    margin-bottom: 0px;
+  }
+
+  #gatsby-focus-wrapper > footer > div:nth-child(2) > form > div:nth-child(2) > button {
+    width: unset;
+    padding: 12px 26px;
+  }
+
+  #gatsby-focus-wrapper > footer > div:nth-child(3) > p {
+    display: none;
+  }
+
+  // Contact Us 
+  .contactform {
+    width: 100%;
+  }
+
+  // Blog page 
+  #gatsby-focus-wrapper > div.css-1ar37a1 > div {
+    flex-direction: column !important;
+  }
+
+  // Copyright 
+  div.copyright {
+    flex-direction: column;
+  }
+
+  div.copyright > div:nth-child(2) > img {
+    margin-top: 15px;
+  }
+
+  /**** RESPONSIVE BASKET ****/
+  #cartpage div.taxes {
+    flex-direction: column;
+  }
+
+  #cartpage button.checkout {
+    width: 100%;
+  }
+
+  #cartpage > div > ul > li:nth-child(3) > span:nth-child(2) {
+    width: 40%;
+  }
+
+  #cartpage div ul {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 80px 345px 90px 100px;
+  }
+
+
+}
+
+
+

@@ -1,0 +1,15 @@
+  <div>
+    <p>Customer Service</p>
+    <ul>
+      <li><Link to="/help/">{data.
+datoCmsHomepage.helpFooter}</Link></li>
+      <li><Link to="/delivery/">{data.
+datoCmsHomepage.deliveryFooter}</Link></li>
+      <li><Link to="/gifts/">{data.
+datoCmsHomepage.giftsFooter}</Link></li>
+      <li><Link to ="/about/">{data.
+datoCmsHomepage.aboutUsFooter}</Link></li>
+      <li><Link to ="/terms/">{data.
+datoCmsHomepage.termsFooter}</Link></li>
+    </ul>
+  </div>  

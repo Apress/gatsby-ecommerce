@@ -1,0 +1,9 @@
+/***** CONTACT FORM ******/
+.contactform { display: flex; flex-direction: column;  width: 50%; }
+
+.contactform label:nth-child(2) {
+  margin-bottom: 10px; }
+
+.contactform input:nth-child(4) { height: 150px;  margin-bottom: 10px; }
+
+.contactform p { background-color: #00ff00; color: #ffffff; padding: 10px; }

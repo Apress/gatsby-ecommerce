@@ -1,0 +1,13 @@
+const data = useStaticQuery(graphql`
+    query CSQuery {    
+      datoCmsHomepage {
+        id
+        customerServiceFooter
+        helpFooter
+        deliveryFooter
+        giftsFooter
+        aboutUsFooter
+        termsFooter
+      }
+    }
+  `)

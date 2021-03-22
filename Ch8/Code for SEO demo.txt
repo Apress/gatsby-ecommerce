@@ -1,0 +1,21 @@
+MODULE EXPORT:
+
+module.exports = {
+  siteMetadata: {
+    title: `Have Cake, Eat Cake`,
+    description: `A demo cake store, built using Gatsby, DatoCMS, Netlify and Shopify`,
+    author: `Alex Libby`,
+    url: `https://www.havecakeeatcake.com`,
+    twitterUsername: `@havecakeeatcake`
+  },
+
+NEW OR REPLACEMENT SEO COMPONENT CALLS:
+
+<SEO title="Products" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="Help" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="Gifts" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="Delivery" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="About Us" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="Cart" keywords={[`gatsby`, `application`, `react`]} />
+<SEO title="404: Not Found" keywords={[`gatsby`, `application`, `react`]} />

@@ -1,0 +1,35 @@
+  <header
+    style={{
+      background: `#a49696`,
+      display: `flex`,
+      justifyContent: `space-evenly`,
+      padding: `20px 30px`,
+      color: `#ffffff`,
+    }}
+  >
+    <div  style={{ display: `flex`, alignItems:`end` }}>
+      <div style={{ display: `flex`, alignItems: `center` }}>
+        <img src={headerImage} alt="site header" style={{ marginBottom: `0`, width: `100px`, height: `auto`, paddingRight: `15px` }} />
+      </div>
+
+      <MenuLink to='/'>
+        <h1>
+         {siteTitle}
+        </h1>
+      </MenuLink>
+      <p>help@havecakeeatcake.com</p>
+      <p>+1-800-765-4321</p>
+    </div>
+  </div>
+
+  <div style={{ display: `flex` }}> 
+    <MenuLink to='/cart' style={{textAlign: `center`}}>
+      <img src={shoppingcart} alt="shoppingcart" style={{width: `40px`, height: `auto`, fill: `#ffffff`, marginBottom: `0`, marginTop: `0.5rem` }} />
+      {hasItems &&
+        <CartCounter>
+          {quantity} item{quantity > 1 ? "s": ""}
+        </CartCounter>
+      }
+    </MenuLink>
+  </div>
+</header>

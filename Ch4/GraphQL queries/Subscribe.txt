@@ -1,0 +1,10 @@
+  const data = useStaticQuery(graphql`
+    query SubscribeQuery {    
+      datoCmsHomepage {
+        id
+        subscribeFooter
+        subscribeTextFooter
+        subscribeButtonFooter
+      }
+    }
+  `)
